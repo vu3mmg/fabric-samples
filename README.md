@@ -39,6 +39,32 @@ Run configtxlator  .Please check for the version
  Then pull the testchainid channel  (System configuration )
  Store the configuration into a json 
  Now we have the configuration of two organizations 
+ 
+ 
+ Make sure you have done npm install and running confitxlator
+ 
+ 
+ then run fabric-samples/balance-transfer]node pullconfig.js 
+ 
+  pullconfig.js will pull the configuration from systemchannel named testchain id for balance transfer application
+  
+  let us store this json output 
+  
+  Please see the file out.json  in the balance-transfer directory, which contains the pulled json
+  
+  The file out.json is having  as structure similiar to one given below 
+
+  We are interseted in extracting Org2MSP , so that we are sure that the syntax of new org details are correct .
+  
+  channel_group": {
+  		"groups": {
+  			"Consortiums": {
+  				"groups": {
+  					"SampleConsortium": {
+  						"groups": {
+  							"Org1MSP": { },
+  							"Org2MSP": { },
+
   
  
  
