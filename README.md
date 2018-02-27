@@ -1,4 +1,25 @@
+
+## What this example do
+This example tries to update the fabcar example  system channel with two orgs 
+
+ Fabcar example is currently having only one  Org . Org1MSP in its system channel *[]: 
+
+ For testing purpose to generate the second OrgMSP  ,ie Org2MSP , we are pulling the org details from  balance transfer application
+ 
+ Then using the Org2MSP from Balance transfer as a new org to be added with Fabcar.
+ 
+
+
 ## Steps to update config of channel testchain id
+
+First clone this repository
+
+This repository uses hyperledger x86_64-1.1.0-preview version
+
+
+Then run balance transfer app  using ./runApp.sh from fabric-samples/balance-transfe
+
+now if you do a docker ps you can see all the containers running (Orderer, peer etc)
 
 ### Prerequisites 
 Run configtxlator  .Please check for the version
@@ -12,6 +33,13 @@ Run configtxlator  .Please check for the version
  ### ./configtxlator start
 2018-02-27 17:23:56.389 IST [configtxlator] startServer -> INFO 001 Serving HTTP requests on 0.0.0.0:7059
  
+### step 1
+ 
+ Run balance transfer application which is having two organizations 
+ Then pull the testchainid channel  (System configuration )
+ Store the configuration into a json 
+ Now we have the configuration of two organizations 
+  
  
  
  
