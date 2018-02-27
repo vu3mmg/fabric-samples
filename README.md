@@ -9,7 +9,12 @@
   node configUpdate.js 
    
    it should do config update for testchainid channel
- 
+   
+   the script is configUpdateMaxMsgCount.js
+   
+   the script pullconfig.js
+   
+   will help you dispaly existing config
  
  make sure that configtxlator: Version: 1.1.0-preview   is running
 
