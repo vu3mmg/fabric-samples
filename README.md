@@ -10,6 +10,8 @@
    
    it should do config update for testchainid channel
  
+ 
+ make sure that configtxlator: Version: 1.1.0-preview   is running
 
 ## What this example do
 This example tries to update the fabcar example  system channel with two orgs 
