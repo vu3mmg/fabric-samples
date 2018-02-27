@@ -1,3 +1,15 @@
+# how to do config update
+
+ go to fabcar directory 
+ 
+ npm install
+ 
+ ./startFabric.sh
+ 
+  node configUpdate.js 
+   
+   it should do config update for testchainid channel
+ 
 
 ## What this example do
 This example tries to update the fabcar example  system channel with two orgs 
