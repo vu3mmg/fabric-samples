@@ -38,7 +38,9 @@ function restartNetwork() {
 
 	#Cleanup the material
 	rm -rf /tmp/hfc-test-kvs_peerOrg* $HOME/.hfc-key-store/ /tmp/fabric-client-kvs_peerOrg*
-
+        echo "Waiting  , if you need you can exit"
+	sleep 10
+  
 	#Start the network
 	docker-compose up -d
 	cd -

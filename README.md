@@ -70,6 +70,54 @@ Run configtxlator  .Please check for the version
  
  
  
+###  now move to fabcar directory 
+
+Do an npm install to install the dependecies 
+
+Make sure you kill any esiting containers 
+
+stop all containers: docker kill $(docker ps -q)
+
+remove all containers. docker rm $(docker ps -a -q)
+
+now start fabcar
+
+Then run fabric-samples/fabcar]node configUpdate.js
+
+This should get the configuation of fabcar like the following and later we can update the configuration with new org
+ 
+ ie Org2MSP 
+ 
+ 
+	============Begining  of Original fab car  Configuration =================================")
+        { channel_group: 
+           { groups: 
+              { Consortiums: 
+                 { groups: 
+                    { SampleConsortium: 
+                       { groups: 
+                          { Org1MSP: 
+                             { mod_policy: 'Admins',
+                               policies: 
+                                { Admins: 
+                                   { mod_policy: 'Admins',
+                                     policy: 
+                                      { type: 1,
+                                        valu .....
+                                         ......... 
+                                         
+                                        
+	============End of   of Original fab car  Configuration =================================")
+ 
+
+
+
+
+
+
+
+
+
 
 ## Hyperledger Fabric Samples
 
